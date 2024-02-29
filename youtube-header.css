@@ -1,0 +1,219 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(221, 213, 213);
+}
+.left-section{
+    width: 0;
+    display: flex;
+     align-items: center;
+}
+.tripeldot{
+    height: 20px;
+    margin-left: 30px;
+    margin-right: 25px;
+    
+}
+.youtube-logo{
+    height: 20px;
+}
+
+
+.middel-section
+{
+        flex: 1;
+        margin-left: 200px;
+        max-width: 700px;
+        margin-right: 35px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.search-button{
+    height: 39px;
+    width: 60px;
+    margin-bottom: 5px;
+    background-color: rgb(247, 247, 247);
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(223, 216, 216);
+    margin-left: -1px;
+    box-shadow:inset 0px 1px 2px rgba(128, 119, 119, 0.5);
+    margin-top: 1px;
+    position: relative;
+}
+.search-button .tooltip,
+.voice-search .tooltip,
+.upload-icon-container .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: roboto,arial;
+}
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,
+.upload-icon-container:hover .tooltip
+{
+    opacity: 1;
+
+}
+.voice-search{
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 36px;
+    object-fit: contain;
+    background-color: rgba(247, 240, 240, 0.452);
+}
+.voice-search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+.search-button,
+.voice-search,
+.upload-icon-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.search-bar{
+    flex: 1;
+    width: 0;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border-width: 1px;
+    font-size: 18px;
+    border-color: rgb(223, 216, 216);
+    border-style: solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow:inset 0px 1px 2px rgba(128, 119, 119, 0.5);
+}
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+.search-bar::placeholder{
+    font-family: roboto;
+    padding-left: 10px;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+
+.right-section
+{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.upload-icon{
+    height: 25px;
+    width: 35px;
+    border: none;
+}
+.youtube-apps-icon{
+    height: 25px;
+    width: 35px;
+    border: none;
+}
+.notification-icon{
+    height: 25px;
+    border: none;
+    object-fit: contain;
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: rgb(199, 12, 12);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 36px;
+    
+
+}
+.account-pic{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 36px;
+    object-fit: cover;
+    margin-left: 15px;
+}
+::-webkit-scrollbar{
+    width : 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    }
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+.side-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+.sidebar-link{
+        height: 74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+}
+.sidebar-link:hover{
+    background-color: rgb(238, 234, 234);
+    cursor: pointer;
+}
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+.sidebar-link div{
+    font-family: roboto,arial;
+    font-size: 10px;
+}
