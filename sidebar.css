@@ -4,5 +4,10 @@
     bottom: 0;
     top: 55px;
     background-color: white;
-    width: 72px;
+    width: 230px;
+}
+@media (max-width: 1300px){
+    .side-bar{
+        width: 70px;
+    }
 }
